@@ -1,0 +1,7 @@
+The fundamental building block in Auto Layout is the constraint. Constraints express rules for the layout of elements in your interface; for example, you can create a constraint that specifies an element’s width, or its horizontal distance from another element. You add and remove constraints, or change the properties of constraints, to affect the layout of your interface.
+
+When calculating the runtime positions of elements in a user interface, the Auto Layout system considers all constraints at the same time, and sets positions in such a way that best satisfies all of the constraints.
+
+Constraint Basics
+
+You can think of a constraint as a mathematical representation of a human-expressable statement. If you’re defining the position of a button, for example, you might want to say “the left edge should be 20 points from the left edge of its containing view.” More formally, this translates to button.left = (container.left + 20), which in turn is an expression of the form y = m*x + b, where:
